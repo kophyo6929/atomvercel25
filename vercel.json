@@ -1,0 +1,16 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist", 
+  "installCommand": "npm install && cd backend && npm install && npx prisma generate && npm run build",
+  "functions": {
+    "api/[...all].ts": {
+      "includeFiles": "backend/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/[...all]"
+    }
+  ]
+}

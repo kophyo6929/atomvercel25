@@ -1,0 +1,199 @@
+{
+  "common": {
+    "back": "Back",
+    "backToDashboard": "Back to Dashboard",
+    "cancel": "Cancel",
+    "close": "Close",
+    "confirm": "Confirm",
+    "submit": "Submit",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search...",
+    "noItemsFound": "No items found",
+    "loading": "Loading...",
+    "username": "Username",
+    "password": "Password",
+    "credits": "Credits",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "app": {
+    "alerts": {
+      "accountBanned": "This account has been banned. Please contact an administrator.",
+      "invalidCredentials": "Invalid credentials!",
+      "usernameTaken": "Username already taken. Please choose a different one.",
+      "usernameBanned": "This username is not available. Please choose a different one.",
+      "registrationSuccess": "Registration successful! Your new User ID is {id}. Please save it for account recovery.",
+      "broadcastSent": "Broadcast sent to {count} user(s).",
+      "error": "Error",
+      "success": "Success"
+    }
+  },
+  "auth": {
+    "signInTitle": "Sign In",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "forgotPasswordLink": "Forgot Password?",
+    "loginButton": "Login",
+    "registerPrompt": "Don't have an account?",
+    "registerLink": "Register",
+    "createAccountTitle": "Create an Account",
+    "confirmPasswordLabel": "Confirm Password",
+    "securityAmountLabel": "Security Amount",
+    "securityAmountPlaceholder": "4-digit number for recovery",
+    "registerButton": "Register",
+    "loginPrompt": "Already have an account?",
+    "loginLink": "Login",
+    "contactAdmin": "Contact Admin for Help",
+    "forgotPasswordModal": {
+      "title": "Forgot Password",
+      "description": "Enter your 6-digit User ID and 4-digit security amount to recover your account.",
+      "userIdLabel": "User ID",
+      "userIdPlaceholder": "6-digit ID",
+      "securityAmountLabel": "Security Amount",
+      "securityAmountPlaceholder": "4-digit number",
+      "verifyButton": "Verify Identity",
+      "alerts": {
+        "invalidInput": "Please enter valid numbers for User ID and Security Amount.",
+        "invalidCredentials": "Invalid User ID or Security Amount. Please try again."
+      }
+    },
+    "resetPasswordModal": {
+        "title": "Set New Password",
+        "description": "Create a new password for user: {username}",
+        "newPasswordLabel": "New Password",
+        "newPasswordPlaceholder": "At least 6 characters",
+        "confirmPasswordLabel": "Confirm New Password",
+        "setNewPasswordButton": "Set New Password",
+        "alerts": {
+            "passwordTooShort": "Password must be at least 6 characters long.",
+            "passwordsDontMatch": "Passwords don't match!",
+            "passwordResetSuccess": "Password for {username} has been reset successfully!\nYou can now log in with your new password."
+        }
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome, {username}!",
+    "yourCredits": "Your Credits:",
+    "browseProductsCardTitle": "🛍️ Browse Products",
+    "browseProductsCardDescription": "View our catalog of digital goods.",
+    "buyCreditsCardTitle": "💰 Buy Credits",
+    "buyCreditsCardDescription": "Top up your account balance.",
+    "myOrdersCardTitle": "📋 My Orders",
+    "myOrdersCardDescription": "Check your order history and status.",
+    "faqCardTitle": "❓ FAQ",
+    "faqCardDescription": "Find answers to common questions.",
+    "notificationsModal": {
+      "title": "Notifications",
+      "emptyMessage": "No notifications",
+      "emptySubMessage": "You're all caught up!"
+    },
+    "userDropdown": {
+      "myProfile": "My Profile",
+      "adminPanel": "Admin Panel",
+      "contactAdmin": "Contact Admin",
+      "logout": "Logout"
+    },
+    "notificationBell": "View notifications"
+  },
+  "productFlow": {
+    "headerSelectOperator": "Select Operator",
+    "headerOperator": "Operator: {operator}",
+    "headerCategory": "Category: {category}",
+    "searchInputPlaceholder": "Search products in this category...",
+    "buyButton": "Buy",
+    "emptyCategory": "No products in this category",
+    "emptyCategorySub": "An admin may need to add products here.",
+    "deliveryModal": {
+      "title": "Delivery Information",
+      "description": "Please enter the phone number to deliver {productName} to.",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "e.g., 09xxxxxxxxx",
+      "proceedButton": "Proceed",
+      "alertInvalidPhone": "Please enter a valid phone number."
+    },
+    "confirmModal": {
+      "title": "Confirm Your Purchase",
+      "product": "Product:",
+      "deliverTo": "Deliver to:",
+      "cost": "Cost:",
+      "yourBalance": "Your Balance:",
+      "balanceAfter": "Balance After:",
+      "confirmButton": "Confirm Purchase",
+      "alertNotEnoughCredits": "You do not have enough credits for this purchase.",
+      "alertOrderSubmitted": "Your order for {productName} has been submitted. {cost} C have been deducted and will be refunded if the order is declined."
+    }
+  },
+  "buyCredits": {
+    "title": "Buy Credits",
+    "step1Title": "Step 1: Choose Amount",
+    "quickBuy": "Quick Buy",
+    "or": "OR",
+    "customAmount": "Enter Custom Amount",
+    "amountLabel": "Amount (MMK)",
+    "amountPlaceholder": "e.g., 5000",
+    "youWillGet": "You will get:",
+    "nextButton": "Next →",
+    "step2Title": "Step 2: Select Payment Method",
+    "purchasingFor": "You are purchasing for {amount} MMK.",
+    "step3Title": "Step 3: Upload Payment Proof",
+    "instructions": "Please transfer {amount} MMK to the following {method} account:",
+    "accountName": "Name:",
+    "accountNumber": "Number:",
+    "uploadInstruction": "After payment, please upload the screenshot of your payment proof to this website.",
+    "chooseScreenshot": "Choose Screenshot",
+    "changeScreenshot": "Change Screenshot",
+    "submitRequestButton": "Submit Request",
+    "alerts": {
+      "invalidAmount": "Please enter a valid amount.",
+      "noProof": "Please upload a payment proof screenshot.",
+      "requestSubmitted": "Your payment request has been submitted for approval."
+    }
+  },
+  "myOrders": {
+    "title": "My Order History",
+    "filters": {
+      "all": "All",
+      "pending": "Pending",
+      "completed": "Completed",
+      "declined": "Declined"
+    },
+    "orderId": "Order ID:",
+    "date": "Date:",
+    "deliveredTo": "Delivered to:",
+    "paymentVia": "Payment via:",
+    "emptyTitle": "You haven't placed any orders yet",
+    "emptySubtitle": "Browse products or buy credits to get started.",
+    "emptyFilterTitle": "No orders found",
+    "emptyFilterSubtitle": "There are no orders that match the current filter."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "q1": "How do I buy credits?",
+      "a1": "Navigate to the 'Buy Credits' section from your dashboard. You can choose a pre-set package or enter a custom amount in MMK. Then, select your preferred payment method (like KPay or Wave Pay), transfer the amount to the provided account details, and upload a screenshot of your payment confirmation. An admin will review and approve your request shortly.",
+      "q2": "How long does it take for my credit purchase to be approved?",
+      "a2": "Our admins review credit purchase requests as quickly as possible, usually within a few minutes to an hour during business hours. You will see the updated credit balance on your dashboard once it's approved.",
+      "q3": "How do I purchase a product?",
+      "a3": "Go to 'Browse Products' from the dashboard. Select the operator (e.g., ATOM, MPT), then the category (e.g., Data, Mins), and finally choose the product you want. Click 'Buy', enter the phone number for delivery, and confirm the purchase. The cost in credits will be deducted from your account balance.",
+      "q4": "What happens if my product order is declined?",
+      "a4": "If your product order is declined for any reason, the credits that were deducted for the purchase will be automatically refunded to your account balance. You can check the status of your orders in the 'My Orders' section.",
+      "q5": "Is there a transaction fee?",
+      "a5": "No, we do not charge any extra transaction fees. The price you see in MMK or credits is the final amount you will pay."
+    }
+  },
+  "userProfile": {
+    "title": "My Profile",
+    "userId": "User ID:",
+    "currentBalance": "Current Balance",
+    "pendingActivity": "Pending Activity",
+    "pendingProductOrders": "Product Orders",
+    "pendingCreditPayments": "Credit Payments",
+    "viewAllOrders": "View All My Orders"
+  },
+  "languageSwitcher": {
+      "english": "English",
+      "myanmar": "မြန်မာ"
+  }
+}
