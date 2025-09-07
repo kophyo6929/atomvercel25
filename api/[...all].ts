@@ -8,11 +8,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     // Dynamic import to handle module resolution in serverless environment
     const moduleImport = await import('../backend/dist/index.js');
-    const app = moduleImport.default || moduleImport;
+    const app = moduleImport.default;
     
-    // Express apps are objects with a handle method, not direct functions
-    if (!app || (typeof app !== 'function' && typeof app.handle !== 'function')) {
-      console.error('App is not valid:', typeof app, Object.keys(app || {}));
+    // Validate that app is an Express instance
+    if (!app || typeof app !== 'object' || typeof app.handle !== 'function') {
+      console.error('App is not valid Express instance:', typeof app, app);
       return res.status(500).json({ 
         error: 'Server configuration error',
         message: 'Express app not properly exported'
@@ -21,14 +21,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     
     // Handle the request with Express app
     return new Promise((resolve, reject) => {
-      if (typeof app === 'function') {
-        app(req, res);
-      } else {
-        app.handle(req, res);
-      }
-      res.on('finish', resolve);
-      res.on('close', resolve);
-      res.on('error', reject);
+      app(req, res, (err?: any) => {
+        if (err) reject(err);
+        else resolve(undefined);
+      });
     });
   } catch (error) {
     console.error('Serverless function error:', error);
